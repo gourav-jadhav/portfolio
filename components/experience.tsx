@@ -3,48 +3,48 @@ import { Badge } from '@/components/ui/badge'
 const experiences = [
   {
     id: 1,
-    title: 'Senior Full-Stack Developer',
-    company: 'Tech Logistics Inc.',
-    period: '2022 - Present',
+    title: 'Senior Frontend Developer',
+    company: 'Sowermate Technologies',
+    period: '2025 - Present',
     description:
-      'Leading development of enterprise logistics platform serving 500+ clients. Architected microservices infrastructure and mentored junior developers.',
+      'Leading web development initiatives with focus on scalable frontend architecture, performance, and maintainable UI systems.',
     highlights: [
-      'Reduced load times by 60% through optimization',
-      'Led team of 5 developers',
-      'Implemented real-time tracking system',
-      'Managed PostgreSQL database with 10M+ records',
+      'Own frontend delivery for key business modules',
+      'Improve performance and maintainability of web applications',
+      'Mentor junior developers and support code reviews',
+      'Collaborate with product and design for release planning',
     ],
-    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
+    tech: ['React.js', 'Next.js', 'TypeScript', 'JavaScript', 'Vercel'],
   },
   {
     id: 2,
-    title: 'Full-Stack Developer',
-    company: 'Digital Solutions Ltd.',
-    period: '2020 - 2022',
+    title: 'Junior React Developer',
+    company: 'Sowermate Technologies',
+    period: '2024 - 2025',
     description:
-      'Developed multiple SaaS products from concept to production. Collaborated with product and design teams to deliver user-centric solutions.',
+      'Transitioned to web development with React and delivered responsive feature modules for production applications.',
     highlights: [
-      'Built 3 production SaaS applications',
-      'Implemented payment processing with Stripe',
-      'Designed database schemas for 2M+ users',
-      'Conducted code reviews and mentoring',
+      'Built reusable components and page modules using React',
+      'Implemented responsive layouts across desktop and mobile',
+      'Integrated frontend with backend APIs',
+      'Contributed to production bug fixes and feature releases',
     ],
-    tech: ['React', 'Express', 'MongoDB', 'GraphQL', 'TypeScript'],
+    tech: ['React.js', 'JavaScript', 'TypeScript', 'Next.js', 'Git'],
   },
   {
     id: 3,
-    title: 'Junior Developer',
-    company: 'Web Agency Pro',
-    period: '2019 - 2020',
+    title: 'Flutter Developer',
+    company: 'Sowermate Technologies',
+    period: '2023 - 2024',
     description:
-      'Built responsive web applications and maintained client projects. Worked with cross-functional teams to deliver quality solutions.',
+      'Started as a mobile developer using Flutter and also supported backend development using PHP and SQL stored procedures.',
     highlights: [
-      'Delivered 10+ client projects',
-      'Improved code performance by 40%',
-      'Implemented mobile-responsive design',
-      'Collaborated with designers on UI implementation',
+      'Built and maintained mobile app features in Flutter',
+      'Implemented backend modules using PHP',
+      'Worked with MySQL (MariaDB) stored procedures',
+      'Collaborated across mobile, backend, and QA tasks',
     ],
-    tech: ['React', 'JavaScript', 'CSS', 'Node.js', 'Firebase'],
+    tech: ['Flutter', 'Dart', 'PHP', 'MySQL (MariaDB)', 'Stored Procedures'],
   },
 ]
 
@@ -57,7 +57,7 @@ export function Experience() {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Experience</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              5+ years of professional experience building scalable applications and leading technical initiatives.
+              3 years at the same company, growing from Flutter and backend work to React development and now senior frontend ownership.
             </p>
           </div>
 

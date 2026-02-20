@@ -20,12 +20,12 @@ export function Hero() {
 
           {/* Description - elegant subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Specialized in logistics platforms, SaaS dashboards, and automation tools. I create production-ready solutions that solve real business problems.
+            Specialized in logistics, eCommerce, workflows platforms, SaaS dashboards, and automation tools. I create production-ready solutions that solve real business problems.
           </p>
 
           {/* Tech stack row */}
           <div className="flex flex-wrap justify-center gap-2 pt-4">
-            {['Next.js', 'Node.js', 'PostgreSQL', 'Docker', 'TypeScript'].map((tech) => (
+            {['React.js', 'Next.js', 'TypeScript', 'Node.js', 'MySQL (MariaDB)'].map((tech) => (
               <span key={tech} className="pill-tech">
                 {tech}
               </span>

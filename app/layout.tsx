@@ -8,8 +8,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Gourav Jadhav - Full-Stack Developer',
-  description: 'Full-Stack Developer specializing in logistics systems, SaaS dashboards, and automation. Building scalable web applications.',
-  keywords: ['Full-Stack Developer', 'Next.js', 'React', 'Node.js', 'Logistics', 'SaaS', 'Web Development'],
+  description: 'Full-Stack Developer, SaaS dashboards, and automation. Building scalable web applications.',
+  keywords: ['Full-Stack Developer', 'Next.js', 'React', 'Node.js', 'SaaS', 'Web Development'],
   authors: [{ name: 'Gourav Jadhav' }],
   creator: 'Gourav Jadhav',
   generator: 'v0.app',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://gouravjadhav.dev',
     siteName: 'Gourav Jadhav Portfolio',
     title: 'Gourav Jadhav - Full-Stack Developer',
-    description: 'Full-Stack Developer specializing in logistics systems, SaaS dashboards, and automation.',
+    description: 'Full-Stack Developer, SaaS dashboards, and automation.',
   },
   icons: {
     icon: [

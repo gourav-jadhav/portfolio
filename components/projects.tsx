@@ -13,7 +13,7 @@ const projects = [
     description: 'A comprehensive platform for managing shipments, routes, and fleet operations with real-time tracking.',
     longDescription:
       'Built a full-featured logistics management system that handles complex shipment tracking, route optimization, and fleet management. The system processes thousands of shipments daily with real-time GPS tracking integration and automated notifications.',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Redis', 'Google Maps API'],
+    tech: ['Next.js', 'TypeScript', 'Node.js', 'MySQL (MariaDB)', 'Google Maps API'],
     github: 'https://github.com',
     demo: 'https://example.com',
     features: [
@@ -29,7 +29,7 @@ const projects = [
     description: 'AI-powered software for optimizing glass cutting patterns and minimizing material waste.',
     longDescription:
       'Developed an intelligent optimization system that uses algorithms to calculate optimal cutting patterns for glass sheets. This reduces material waste by up to 40% and significantly improves production efficiency.',
-    tech: ['React', 'Node.js', 'Canvas API', 'WebGL', 'MongoDB'],
+    tech: ['React', 'Node.js', 'Next js', 'Tailwind css'],
     github: 'https://github.com',
     demo: 'https://example.com',
     features: [
@@ -41,30 +41,51 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Shipper & Broker Platform',
-    description: 'A SaaS marketplace connecting shippers with brokers for freight logistics.',
+    title: 'FlexiPunch Application',
+    description: 'A workforce attendance and time-tracking platform with punch records, shift visibility, and reporting.',
     longDescription:
-      'Created a two-sided marketplace platform that connects shippers with freight brokers. Includes real-time quote generation, bid management, and payment processing with integrated communication tools.',
-    tech: ['Next.js', 'TypeScript', 'Stripe', 'Supabase', 'Tailwind CSS'],
+      'Built a responsive web platform to manage employee punch-in and punch-out workflows, monitor attendance trends, and streamline daily workforce operations. Focused on intuitive UX, accurate records, and performance for regular operational use.',
+    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'MySQL (MariaDB)'],
     github: 'https://github.com',
     demo: 'https://example.com',
     features: [
-      'Real-time quote system',
-      'Bid management',
-      'Payment processing',
-      'In-app messaging',
+      'Punch in/out tracking',
+      'Attendance dashboard',
+      'Shift and records management',
+      'Exportable reports',
     ],
   },
   {
     id: 4,
-    title: 'AI Quote Generator',
-    description: 'Intelligent system that generates accurate shipping quotes using machine learning.',
+    title: 'eCommerce Application',
+    description: 'A modern online store with product catalog, cart, checkout flow, and order management.',
     longDescription:
-      'Built an AI-powered quote generation system that learns from historical data and market conditions to provide accurate shipping estimates. Uses machine learning to continuously improve prediction accuracy.',
-    tech: ['Python', 'TensorFlow', 'Node.js', 'PostgreSQL', 'FastAPI'],
+      'Developed an end-to-end eCommerce web application with a user-friendly storefront, product filtering, cart and checkout experience, and admin-side order tracking. Focused on responsive UI and smooth purchase flow.',
+    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'MySQL (MariaDB)'],
     github: 'https://github.com',
     demo: 'https://example.com',
-    features: ['ML model training', 'Quote predictions', 'Rate analysis', 'Custom algorithms'],
+    features: [
+      'Product listing and filters',
+      'Cart and checkout flow',
+      'Order management',
+      'Responsive storefront UI',
+    ],
+  },
+  {
+    id: 5,
+    title: 'Civil Application',
+    description: 'A web application for civil operations and project workflows, designed with MUI components.',
+    longDescription:
+      'Developed a civil-focused web application to manage operational workflows, project records, and day-to-day tracking. The interface was built using MUI to ensure a clean, consistent, and scalable design system across modules.',
+    tech: ['React', 'TypeScript', 'MUI', 'Node.js', 'MySQL (MariaDB)'],
+    github: 'https://github.com',
+    demo: 'https://example.com',
+    features: [
+      'Project and task workflow tracking',
+      'Role-based module access',
+      'Dashboard views for daily operations',
+      'MUI-based responsive interface',
+    ],
   },
 ]
 
