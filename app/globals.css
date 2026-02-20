@@ -1,0 +1,242 @@
+@import 'tailwindcss';
+
+:root {
+  /* Premium black-and-white theme with subtle depth */
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --card: #0f0f0f;
+  --card-foreground: #fafafa;
+  --popover: #0f0f0f;
+  --popover-foreground: #fafafa;
+  --primary: #ffffff;
+  --primary-foreground: #0a0a0a;
+  --secondary: #e4e4e7;
+  --secondary-foreground: #0a0a0a;
+  --muted: #262626;
+  --muted-foreground: #a1a1aa;
+  --accent: #ffffff;
+  --accent-foreground: #0a0a0a;
+  --destructive: #ef4444;
+  --destructive-foreground: #0a0a0a;
+  --border: #262626;
+  --input: #0f0f0f;
+  --ring: #ffffff;
+  --chart-1: #ffffff;
+  --chart-2: #e4e4e7;
+  --chart-3: #a1a1aa;
+  --chart-4: #71717a;
+  --chart-5: #3f3f46;
+  --radius: 0.5rem;
+  --sidebar: #0a0a0a;
+  --sidebar-foreground: #fafafa;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #a1a1aa;
+  --sidebar-accent-foreground: #0a0a0a;
+  --sidebar-border: #262626;
+  --sidebar-ring: #ffffff;
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply text-4xl font-bold tracking-tight text-foreground;
+  }
+
+  h2 {
+    @apply text-3xl font-bold tracking-tight text-foreground;
+  }
+
+  h3 {
+    @apply text-xl font-semibold text-foreground;
+  }
+
+  h4 {
+    @apply text-lg font-semibold text-foreground;
+  }
+
+  p {
+    @apply text-base leading-relaxed text-foreground;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto;
+  }
+
+  .section-spacing {
+    @apply py-24 border-t border-border;
+  }
+
+  /* Premium card styling with subtle borders */
+  .card-base {
+    @apply bg-card border border-border rounded-lg p-6 hover:border-muted-foreground/30 transition-all duration-300;
+  }
+
+  .card-elevated {
+    @apply bg-card border border-border rounded-lg p-6 shadow-xl hover:shadow-2xl hover:border-muted-foreground/50 transition-all duration-300;
+  }
+
+  /* Professional input styling with focus ring */
+  .input-base {
+    @apply border border-border rounded-lg bg-input px-4 py-2.5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground transition-all duration-150;
+  }
+
+  /* Premium button styles */
+  .button-primary {
+    @apply bg-foreground text-background hover:bg-foreground/90 font-semibold px-4 py-2.5 rounded-lg transition-all duration-150 shadow-sm hover:shadow-md;
+  }
+
+  .button-secondary {
+    @apply border border-border bg-background text-foreground hover:bg-muted hover:border-muted-foreground/50 font-medium px-4 py-2.5 rounded-lg transition-all duration-150;
+  }
+
+  /* Tech stack and skill pill styling */
+  .pill-tech {
+    @apply inline-flex items-center px-3 py-1.5 text-sm font-medium text-muted-foreground border border-border rounded-full hover:border-foreground/30 hover:text-foreground transition-all duration-300;
+  }
+
+  /* Featured project badge */
+  .badge-featured {
+    @apply inline-block px-3 py-1 text-xs font-semibold tracking-wider text-foreground border border-foreground rounded-full;
+  }
+
+  /* Subtle divider styling */
+  .divider-subtle {
+    @apply h-px bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+
+  /* Text hierarchy */
+  .text-section-title {
+    @apply text-5xl font-bold tracking-tight text-foreground mb-4;
+  }
+
+  .text-card-title {
+    @apply text-2xl font-semibold text-foreground mb-3;
+  }
+
+  .text-muted-secondary {
+    @apply text-muted-foreground leading-relaxed;
+  }
+
+  /* Hero subtitle */
+  .text-hero-subtitle {
+    @apply text-lg text-muted-foreground max-w-2xl;
+  }
+
+  /* Hover lift effect for cards */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1;
+  }
+
+  /* Smooth underline for nav */
+  .nav-underline {
+    @apply relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
