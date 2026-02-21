@@ -7,9 +7,9 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Gourav Jadhav - Full-Stack Developer',
-  description: 'Full-Stack Developer, SaaS dashboards, and automation. Building scalable web applications.',
-  keywords: ['Full-Stack Developer', 'Next.js', 'React', 'Node.js', 'SaaS', 'Web Development'],
+  title: 'Gourav Jadhav - Full-Stack Web Developer',
+  description: 'Full-Stack Web Developer, SaaS dashboards, and automation. Building scalable web applications.',
+  keywords: ['Full-Stack Web Developer', 'Next.js', 'React', 'Node.js', 'SaaS', 'Web Development'],
   authors: [{ name: 'Gourav Jadhav' }],
   creator: 'Gourav Jadhav',
   generator: 'v0.app',
