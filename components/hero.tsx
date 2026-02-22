@@ -13,8 +13,8 @@ export function Hero() {
 
       <div className="relative z-10 container px-4 md:px-6 max-w-4xl mx-auto text-center">
         <div className="space-y-8">
-          {/* Main headline - very large and bold */}
-          <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-foreground leading-tight tracking-tight text-balance">
+          {/* Main headline */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-foreground leading-tight tracking-tight text-balance">
             I build scalable web applications and business systems.
           </h1>
 
