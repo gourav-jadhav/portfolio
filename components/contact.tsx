@@ -148,14 +148,14 @@ export function Contact() {
             {/* Social Links */}
             <div className="flex justify-center gap-6">
               <a
-                href="mailto:hello@gouravjadhav.dev"
+                href="mailto:[EMAIL_ADDRESS]"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 title="Email"
               >
                 <Mail className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/gouravjadhav"
+                href="https://www.linkedin.com/in/gourav-jadhav-817836227"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -164,7 +164,7 @@ export function Contact() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com/gouravjadhav"
+                href="https://github.com/gourav-jadhav"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"

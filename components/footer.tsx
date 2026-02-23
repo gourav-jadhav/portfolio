@@ -7,17 +7,17 @@ export function Footer() {
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/gouravjadhav',
+      url: 'https://github.com/gourav-jadhav',
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com/in/gouravjadhav',
+      url: 'https://www.linkedin.com/in/gourav-jadhav-817836227',
     },
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:hello@gouravjadhav.dev',
+      url: 'mailto:[EMAIL_ADDRESS]',
     },
   ]
 
