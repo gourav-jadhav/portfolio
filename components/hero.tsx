@@ -25,7 +25,7 @@ export function Hero() {
 
           {/* Tech stack row */}
           <div className="flex flex-wrap justify-center gap-2 pt-4">
-            {['React.js', 'Next.js', 'TypeScript', 'Node.js', 'MySQL (MariaDB)'].map((tech) => (
+            {['React.js', 'Next.js', 'JavaScript', 'TypeScript', 'Node.js', 'MySQL (MariaDB)'].map((tech) => (
               <span key={tech} className="pill-tech">
                 {tech}
               </span>
