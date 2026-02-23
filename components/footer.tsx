@@ -17,7 +17,7 @@ export function Footer() {
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:hello@gouravjadhav.dev',
+      url: 'mailto:[EMAIL_ADDRESS]',
     },
   ]
 

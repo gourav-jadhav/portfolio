@@ -148,7 +148,7 @@ export function Contact() {
             {/* Social Links */}
             <div className="flex justify-center gap-6">
               <a
-                href="mailto:hello@gouravjadhav.dev"
+                href="mailto:[EMAIL_ADDRESS]"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 title="Email"
               >
