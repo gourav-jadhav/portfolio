@@ -1,6 +1,43 @@
 @import 'tailwindcss';
 
 :root {
+  /* Premium light theme */
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --card: #fafafa;
+  --card-foreground: #0a0a0a;
+  --popover: #ffffff;
+  --popover-foreground: #0a0a0a;
+  --primary: #0a0a0a;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #0a0a0a;
+  --muted: #e4e4e7;
+  --muted-foreground: #71717a;
+  --accent: #0a0a0a;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #fafafa;
+  --ring: #0a0a0a;
+  --chart-1: #0a0a0a;
+  --chart-2: #18181b;
+  --chart-3: #27272a;
+  --chart-4: #3f3f46;
+  --chart-5: #52525b;
+  --radius: 0.5rem;
+  --sidebar: #fafafa;
+  --sidebar-foreground: #0a0a0a;
+  --sidebar-primary: #0a0a0a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f4f4f5;
+  --sidebar-accent-foreground: #0a0a0a;
+  --sidebar-border: #e4e4e7;
+  --sidebar-ring: #0a0a0a;
+}
+
+.dark {
   /* Premium black-and-white theme with subtle depth */
   --background: #0a0a0a;
   --foreground: #fafafa;
@@ -26,7 +63,6 @@
   --chart-3: #a1a1aa;
   --chart-4: #71717a;
   --chart-5: #3f3f46;
-  --radius: 0.5rem;
   --sidebar: #0a0a0a;
   --sidebar-foreground: #fafafa;
   --sidebar-primary: #ffffff;
