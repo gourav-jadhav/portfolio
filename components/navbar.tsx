@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { ModeToggle } from '@/components/mode-toggle'
 
 const navLinks = [
   { label: 'Work', href: '#projects' },
@@ -49,25 +50,31 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <Button
-          className="button-primary text-sm px-6 py-2 hidden md:inline-flex"
-          asChild
-        >
-          <a href="#contact">Let's Talk</a>
-        </Button>
+        {/* Actions - Desktop */}
+        <div className="hidden md:flex items-center gap-4">
+          <ModeToggle />
+          <Button
+            className="button-primary text-sm px-6 py-2"
+            asChild
+          >
+            <a href="#contact">Let's Talk</a>
+          </Button>
+        </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden p-2"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? (
-            <X className="w-6 h-6" />
-          ) : (
-            <Menu className="w-6 h-6" />
-          )}
-        </button>
+        {/* Mobile Actions */}
+        <div className="flex items-center gap-4 md:hidden">
+          <ModeToggle />
+          <button
+            className="p-2 text-foreground"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

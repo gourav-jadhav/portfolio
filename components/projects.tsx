@@ -13,7 +13,7 @@ const projects = [
     description: 'A comprehensive platform for managing shipments, routes, and fleet operations with real-time tracking.',
     longDescription:
       'Built a full-featured logistics management system that handles complex shipment tracking, route optimization, and fleet management. The system processes thousands of shipments daily with real-time GPS tracking integration and automated notifications.',
-    tech: ['Next.js', 'TypeScript', 'Node.js', 'MySQL (MariaDB)', 'Google Maps API'],
+    tech: ['Next.js', 'TypeScript', 'Node.js', 'MariaDB', 'Tailwind CSS'],
     github: 'https://github.com',
     demo: 'https://example.com',
     features: [
@@ -29,7 +29,7 @@ const projects = [
     description: 'AI-powered software for optimizing glass cutting patterns and minimizing material waste.',
     longDescription:
       'Developed an intelligent optimization system that uses algorithms to calculate optimal cutting patterns for glass sheets. This reduces material waste by up to 40% and significantly improves production efficiency.',
-    tech: ['React', 'Node.js', 'Next js', 'Tailwind css'],
+    tech: ['Next.js', 'TypeScript', 'Node.js', 'MariaDB', 'Tailwind CSS'],
     github: 'https://github.com',
     demo: 'https://example.com',
     features: [
@@ -45,7 +45,7 @@ const projects = [
     description: 'A workforce attendance and time-tracking platform with punch records, shift visibility, and reporting.',
     longDescription:
       'Built a responsive web platform to manage employee punch-in and punch-out workflows, monitor attendance trends, and streamline daily workforce operations. Focused on intuitive UX, accurate records, and performance for regular operational use.',
-    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'MySQL (MariaDB)'],
+    tech: ['React.js', 'JavaScript', 'MUI', 'MariaDB'],
     github: 'https://github.com',
     demo: 'https://example.com',
     features: [
@@ -61,7 +61,7 @@ const projects = [
     description: 'A modern online store with product catalog, cart, checkout flow, and order management.',
     longDescription:
       'Developed an end-to-end eCommerce web application with a user-friendly storefront, product filtering, cart and checkout experience, and admin-side order tracking. Focused on responsive UI and smooth purchase flow.',
-    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'MySQL (MariaDB)'],
+    tech: ['React.js', 'JavaScript', 'MUI', 'MariaDB'],
     github: 'https://github.com',
     demo: 'https://example.com',
     features: [
@@ -77,7 +77,7 @@ const projects = [
     description: 'A web application for civil operations and project workflows, designed with MUI components.',
     longDescription:
       'Developed a civil-focused web application to manage operational workflows, project records, and day-to-day tracking. The interface was built using MUI to ensure a clean, consistent, and scalable design system across modules.',
-    tech: ['React', 'TypeScript', 'MUI', 'Node.js', 'MySQL (MariaDB)'],
+    tech: ['React.js', 'JavaScript', 'MUI', 'MariaDB'],
     github: 'https://github.com',
     demo: 'https://example.com',
     features: [
@@ -213,28 +213,7 @@ export function Projects() {
                   </div>
                 </div>
 
-                {/* CTA Buttons */}
-                <div className="flex gap-3 pt-4 border-t border-border">
-                  <Button
-                    className="flex-1 bg-foreground text-background hover:bg-foreground/90"
-                    asChild
-                  >
-                    <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Live
-                    </a>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="flex-1"
-                    asChild
-                  >
-                    <a href={selectedProject.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      View Code
-                    </a>
-                  </Button>
-                </div>
+
               </div>
             </>
           )}
